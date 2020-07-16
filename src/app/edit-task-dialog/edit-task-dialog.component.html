@@ -1,0 +1,42 @@
+    <div id="modal-content-wrapper">
+            <header id="modal-header">
+                <h1 id="modal-title">Task Reactive Form dialog.</h1>
+            </header>
+            <form [formGroup]="taskEditForm">
+            <section id="modal-body">
+                    <div class="left-column col-lg-12">
+                            <div class="inline-block col-lg-6">
+                                <div class="row">
+                                    <table>
+                                        <tr>
+                                            <td><label class="control-label form-group"><b>ID</b></label></td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" formControlName="id"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="control-label form-group"><b>Priority</b></label></td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" formControlName="priority"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="control-label form-group"><b>Description</b></label></td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" formControlName="description"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="control-label form-group"><b>Status</b></label></td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" formControlName="status"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+            </section>
+        </form>
+            <footer id="modal-footer">
+                <button *ngIf="(taskList != null)" mat-raised-button id="modal-action-button" (click)="updateTask()">Update</button>
+                <button *ngIf="(taskList == null)" mat-raised-button id="modal-action-button" (click)="addTask()">Add</button>
+                <button mat-raised-button id="modal-cancel-button" (click)="closeModal()">Go back</button>
+            </footer>
+    </div>

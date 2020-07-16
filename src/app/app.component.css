@@ -1,0 +1,98 @@
+
+  .toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .content {
+    display: flex;
+    margin: 100px auto;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    align-items: center;
+    line-height: 30px;
+    background-color: rgb(116, 114, 114);
+    text-align: center;
+  }
+
+  .table {
+    border: 0px;
+    margin-bottom: 0px;
+    width: 90%;
+    height: 100%;
+}
+
+    .table thead {
+        border-bottom: 0px solid #d9d9d9;
+    }
+
+        .table thead th {
+            background-color: #E5E5E5;
+            vertical-align: middle;
+        }
+
+    .table tbody tr td {
+      width: 20%;
+      text-align: center;
+    }
+
+    .table tbody tr:nth-of-type(even) {
+        background-color: #f2f2f2;
+    }
+
+    .table.table-hover tbody tr:hover, .table tbody tr.table-active {
+        box-shadow: inset 0.625rem 0 0 -0.3125rem #297dfd;
+    }
+   .panel-body-align {
+      padding: 0 0 !important;
+      height: 100%;
+      width: 100%;
+  }
+.imgClass {
+  width: 90%
+}
+  .AddButton {
+    border-radius: 5px;
+    padding: 7px 30px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(34, 34, 121);
+    margin-left: -88%;
+  }
+
+  .UpdateButton {
+    border-radius: 5px;
+    padding: 7px 10px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(34, 34, 121);
+  }
+
+  .DeleteButton {
+    border-radius: 5px;
+    padding: 7px 10px;
+    color: white;
+    cursor: pointer;
+    background-color: #f44336;
+  }
+
+  mat-dialog-container#modal-component {
+    border: 1px solid #262626;
+    border-radius: 11px;
+    background-color: #238383;
+    text-align: center;
+}
